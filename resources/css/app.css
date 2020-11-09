@@ -1,0 +1,52 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+span[aria-current="page"] span {
+  background: rgb(69, 72, 235);
+  color: white;
+}
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+}
+
+.modal-container.close {
+  z-index: -100;
+}
+
+.modal-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: 100vh;
+  background: rgb(238, 237, 237);
+  opacity: 0.3;
+  transition-duration: 200ms;
+}
+
+.modal-container .modal-dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container .modal-dialog .modal {
+  background: #fff;
+  width: 500px;
+}
