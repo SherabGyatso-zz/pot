@@ -48,3 +48,7 @@ Command | Description
 - [Live wire](https://laravel-livewire.com/)
 - [Laravel Jetstream](https://jetstream.laravel.com/1.x/installation.html)
 
+## Greenbook local mysql connnection with docker
+
+`docker run --name gb-mysql -p 3306:3306 -e MYSQL_DATABASE=ctaqadb -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7`
+
